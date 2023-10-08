@@ -1,0 +1,25 @@
+{
+  "name": "jpql-editor",
+  "displayName": "JPQL Editor",
+  "description": "jpql editor",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jpql",
+      "aliases": ["JPQL", "jpql"],
+      "extensions": ["jpql"],
+      "configuration": "./syntaxes/jpql.tmLanguage.json"
+    }],
+    "grammars": [{
+      "language": "jpql",
+      "scopeName": "source.jpql",
+      "path": "./syntaxes/jpql.plist"
+    }]
+  }
+}
