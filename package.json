@@ -4,10 +4,11 @@
   "description": "jpql editor",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.83.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Other"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
@@ -30,6 +31,12 @@
         "language": "jpql",
         "scopeName": "source.jpql",
         "path": "./syntaxes/jpql.plist"
+      }
+    ],
+    "commands": [
+      {
+        "command": "helloworld.helloWorld",
+        "title": "Hello World"
       }
     ]
   },
@@ -54,7 +61,6 @@
     "@vscode/test-electron": "^2.3.4"
   },
   "dependencies": {
-    "antlr4": "^4.13.1",
-    "antlr4ts": "^0.5.0-alpha.4"
+    "antlr4": "^4.13.1"
   }
 }
